@@ -1,1 +1,9 @@
 # InteligenciaNegocios
+
+#Creado por: SEBASTIAN ACOSTA - ISABEL VICTORIA - JONATHAN MOYA 
+
+#Lo que se hizo (Fases del Proyecto)
+1. Recolección y Limpieza de DatosFuente: Se extrajeron datos históricos de precios diarios (Open, High, Low, Close) y volumen (volumeto) utilizando la CryptoCompare API.Procesamiento: Se realizó la limpieza, estandarización de formatos y estructuración de los datos en un único dataset unificado (base_datos_criptomonedas.csv).
+2. Análisis Exploratorio de Datos (EDA)Se generaron estadísticas descriptivas para las métricas financieras (promedios, desviaciones) por cada criptomoneda.Se graficaron las tendencias históricas de precios (close) para visualizar el comportamiento a largo plazo.
+3. Clusterización y Segmentación del ComportamientoObjetivo: Agrupar días o periodos con características de precio y volumen similares.Técnicas Aplicadas:K-Means (Particionante): Identificación de $K$ grupos distintos, usando el Método del Codo para optimizar $K$.DBSCAN (Densidad): Agrupación basada en la densidad local, identificando clusters de forma irregular y puntos de ruido (valores atípicos).Clusterización Jerárquica: Creación de una jerarquía de fusiones, visualizada mediante un Dendrograma.Preprocesamiento Clave: Estandarización de datos para asegurar una correcta medición de distancias.
+4. Modelado de Series de Tiempo y Predicción (Pendiente/Próxima Fase)Análisis Temporal: Aplicación de técnicas de series de tiempo para identificar componentes de tendencia y estacionalidad.Modelos Predictivos: Desarrollo de modelos para la predicción de precios futuros:Estadísticos: Modelos ARIMA (AutoRegressive Integrated Moving Average).Redes Neuronales: Modelos de Deep Learning como LSTM (Long Short-Term Memory) o GRU (Gated Recurrent Unit).Evaluación: Uso de métricas como el Error Cuadrático Medio (MSE) y el Error Absoluto Porcentual Medio (MAPE) para medir la precisión del modelo.
